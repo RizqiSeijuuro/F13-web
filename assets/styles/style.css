@@ -24,7 +24,7 @@ a {
 }
 
 .Perkenalan {
-    background-image: url(/assets/images/laptop.jpg);
+    background-image: url(assets/images/laptop.jpg);
     background-size: cover;
     text-align: left;
     padding: 150px 0 200px 50px;
