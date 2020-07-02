@@ -1,0 +1,164 @@
+/* Reset CSS (JANGAN DIHAPUS) */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.Perkenalan {
+    background-image: url(/assets/images/laptop.jpg);
+    background-size: cover;
+    text-align: left;
+    padding: 150px 0 200px 50px;
+    color: #C8D6E5;
+}
+
+.Perkenalan h1 {
+    font-size: 72px;
+    padding-bottom: 0px;
+}
+
+.Perkenalan h2 {
+    font-size: 36px;
+    padding-bottom: 10px;
+    opacity: 0.8;
+}
+
+.Perkenalan p {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.btn-wrapper {
+    margin: 40px 0;
+}
+
+.btn {
+    
+    font-size: 18px;
+    color: #000000;
+    background-color: #1DD1A1;
+    opacity: 0.8;
+    padding: 5px 12px;
+    border-radius: 10px;
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,.5);
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.Materi {
+    position: relative;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.kotak {
+    background-color: #222F3E;
+    z-index: 1;
+    position: absolute;
+    top: -50px;
+    width: 1170px;
+    border-radius: 40px;
+}
+
+.heading-a {
+    color: #C8D6E5;
+    font-size: 36px;
+    font-weight: normal;
+    padding: 50px 0;
+    text-align: center;
+    display: inline-block;
+}
+
+.lessons {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.lesson {
+    float: left;
+    width: 300px;
+    height: 370px;
+    background-color: #C4C4C4;
+    margin: 19px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.lesson-icon {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.lesson p {
+    width: 80%;
+    display: inline-block;
+}
+
+.heading-a {
+    padding-bottom: 80px;
+}
+
+.Tim {
+    margin-top: 750px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.heading-b {
+    font-size: 48px;
+    color: #222F3E;
+    padding-bottom: 80px;
+}
+
+.all {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.anggota-up {
+    display: inline-block;
+    width: 300px;
+    height: 500px;
+    background-color: #222F3E;
+    margin: 19px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.anggota-down {
+    display: inline-block;
+    width: 300px;
+    height: 500px;
+    margin: 19px;
+    background-color: #222F3E;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.txt-anggota{
+    width: 80%;
+    color: #C8D6E5;
+    display: inline-block;
+}
