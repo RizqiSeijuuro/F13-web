@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6, p, div {
     outline: none !important;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins";
 }
@@ -29,8 +33,54 @@ a {
     margin: 0 auto;
 }
 
+/* bagian footer */
+header {
+    height: 65px;
+    line-height: 65px;
+	width: 100%;
+    background-color: #222f3e;
+    opacity: 0.8;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+}
+	
+.header-left {
+	float: left;
+	color: white;
+    padding-left: 0;
+    opacity: 1;
+}
+
+.header-right {
+	float: right;
+    margin-right: -25px;
+    opacity: 1;
+}
+
+.header-right a {
+	line-height: 65px;
+	padding: 0 25px;
+	color: white;
+	display: block;
+	float: right;
+	transition: all 0.5s;
+}
+
+
+a {
+	cursor: pointer;
+	transition: 0.25s all;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* bagian main */
+
 #Perkenalan {
-    background: url(assets/images/laptop.png);
+    background-image: url(assets/images/laptop.jpg);
     background-size: cover;
     text-align: left;
     height: calc(100vh + 70px);
@@ -110,17 +160,17 @@ a {
 }
 
 .lesson {
-    float: left;
     width: 300px;
     background-color: #C4C4C4;
-    margin: 20px;
+    margin: 0 20px;
     text-align: center;
     border-radius: 20px;
+    display: inline-block;
 }
 
 .lesson-icon {
     text-align: center;
-    padding: 20px 10px;
+    padding: 20px 0;
 }
 
 .lesson p {
@@ -149,7 +199,7 @@ a {
 
 .anggota {
     display: inline-block;
-    width: 300px;
+    width: 330px;
     background-color: #222F3E;
     margin: 19px;
     text-align: center;
@@ -157,7 +207,21 @@ a {
 }
 
 .card h4 {
-    color: #C8D6E5;  
+    color: #C8D6E5;
+}
+
+.avatar img {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    filter: grayscale(100%);
+    border-radius: 50%;
+    transition: .5s all;
+}
+
+.avatar img:hover {
+    filter: grayscale(0%);
+    transition: .5s all;
 }
 
 .txt-anggota{
@@ -170,8 +234,8 @@ a {
 }
 
 
-/* bagian portfolio */
 
+/* bagian portfolio */
 #portfolio {
     margin-bottom: 50px;
     text-align: center;
@@ -213,7 +277,7 @@ a {
 
 #portfolio p {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
     line-height: 1.75em;
@@ -221,7 +285,7 @@ a {
 
 #portfolio .button {
     display: inline-block;
-    margin: 15px 0 15px;
+    margin: 15px 0 10px;
     padding: 5px 15px;
     line-height: 35px;
     background: #2ebf91;
@@ -243,12 +307,18 @@ a {
     box-shadow: none;
 }
 
-#portfolio .image,#portfolio .caption {
+#portfolio .image {
+    line-height: 0;
+}
+
+#portfolio .image, #portfolio .caption {
     float: left;
     width: 50%;
 }
 
-
+.image img {
+    width: 100%;
+}
 
 
 /* bagian footer*/
@@ -273,3 +343,62 @@ footer {
     float: right;
     color: #C8D6E5;
 }
+
+
+/* Responsive */
+
+@media (min-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  
+    .container {
+      width: 750px;
+    }
+  
+    header .header-right a {
+      display: inline-block;
+    }
+  
+    .lesson {
+      width: 300px;
+    }
+  
+    #Perkenalan h1 {
+      font-size: 3.5em;
+    }
+  
+    #portfolio .wrap {
+      border-radius: 30px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  
+    #Perkenalan {
+      min-height: 700px;
+      padding-top: 180px;
+    }
+  
+    #portfolio .image,
+    #portfolio .caption {
+      float: left;
+      width: 50%;
+    }
+  }
+
+
+@media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+
+    #portfolio h3 {
+      margin-top: 30px;
+      font-size: 2.5em;
+    }
+  }
