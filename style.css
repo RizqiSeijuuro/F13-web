@@ -76,7 +76,7 @@ a {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* bagian main */
+/* bagian landing */
 
 #Perkenalan {
     background-image: url(assets/images/laptop.jpg);
@@ -198,7 +198,7 @@ a {
 }
 
 .anggota {
-    display: inline-block;
+    float: left;
     width: 300px;
     background-color: #222F3E;
     padding: 20px 0;
