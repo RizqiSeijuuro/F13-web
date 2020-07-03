@@ -171,7 +171,8 @@ a {
 
 
 
-/* Rizky */
+/* Bagian portfolio */
+
 #portfolio {
     margin-bottom: 50px;
     text-align: center;
@@ -213,7 +214,7 @@ a {
 
 #portfolio p {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
     line-height: 1.75em;
@@ -221,7 +222,7 @@ a {
 
 #portfolio .button {
     display: inline-block;
-    margin: 15px 0 15px;
+    margin: 15px 0 10px;
     padding: 5px 15px;
     line-height: 35px;
     background: #2ebf91;
@@ -243,9 +244,17 @@ a {
     box-shadow: none;
 }
 
-#portfolio .image,#portfolio .caption {
+#portfolio .image {
+    line-height: 0;
+}
+
+#portfolio .image, #portfolio .caption {
     float: left;
     width: 50%;
+}
+
+.image img {
+    width: 100%;
 }
 
 
