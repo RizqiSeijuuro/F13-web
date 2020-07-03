@@ -171,8 +171,7 @@ a {
 
 
 
-/* Bagian portfolio */
-
+/* Rizky */
 #portfolio {
     margin-bottom: 50px;
     text-align: center;
@@ -258,8 +257,6 @@ a {
 }
 
 
-
-
 /* bagian footer*/
 
 footer {
@@ -282,3 +279,62 @@ footer {
     float: right;
     color: #C8D6E5;
 }
+
+
+/* Responsive */
+
+@media (min-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  
+    .container {
+      width: 750px;
+    }
+  
+    header .header-right a {
+      display: inline-block;
+    }
+  
+    .lesson {
+      width: 300px;
+    }
+  
+    #Perkenalan h1 {
+      font-size: 3.5em;
+    }
+  
+    #portfolio .wrap {
+      border-radius: 30px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  
+    #Perkenalan {
+      min-height: 700px;
+      padding-top: 180px;
+    }
+  
+    #portfolio .image,
+    #portfolio .caption {
+      float: left;
+      width: 50%;
+    }
+  }
+
+
+@media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+
+    #portfolio h3 {
+      margin-top: 30px;
+      font-size: 2.5em;
+    }
+  }
