@@ -1,0 +1,275 @@
+/* Reset CSS (JANGAN DIHAPUS) */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none !important;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+#Perkenalan {
+    background-image: url(assets/images/laptop.jpg);
+    background-size: cover;
+    text-align: left;
+    height: calc(100vh + 70px);
+    padding: 150px 0 200px 50px;
+    color: #C8D6E5;
+}
+
+#Perkenalan h1 {
+    font-size: 72px;
+    padding-bottom: 0px;
+}
+
+#Perkenalan h2 {
+    font-size: 36px;
+    padding-bottom: 10px;
+    opacity: 0.8;
+}
+
+#Perkenalan p {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.btn-wrapper {
+    margin: 40px 0;
+}
+
+.btn {
+    font-size: 18px;
+    color: #000000;
+    background-color: #1DD1A1;
+    opacity: 0.8;
+    padding: 5px 12px;
+    border-radius: 10px;
+    box-shadow: 0 5px #228c6a;
+    transition: .15s all;
+}
+
+.btn:hover {
+    background: #b0bec5;
+    color: #263238;
+    box-shadow: 0 5px #90a4ae;
+    transition: .15s all;
+}
+
+.btn:active {
+    margin: 20px 0 10px;
+    box-shadow: none;
+}
+
+
+/* Bagian Materi*/
+
+#Materi {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.kotak {
+    background-color: #222F3E;
+    margin-top: -50px;
+    border-radius: 40px;
+}
+
+.heading-a {
+    color: #C8D6E5;
+    font-size: 36px;
+    font-weight: normal;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.lessons {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.lesson {
+    float: left;
+    width: 300px;
+    background-color: #C4C4C4;
+    margin: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.lesson-icon {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.lesson p {
+    width: 80%;
+    height: 200px;
+    display: inline-block;
+}
+
+/* Bagian Tim*/
+
+#Tim {
+    margin: 70px;
+    text-align: center;
+}
+
+.heading-b {
+    font-size: 48px;
+    color: #222F3E;
+    padding-bottom: 80px;
+}
+
+.card {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.anggota {
+    display: inline-block;
+    width: 300px;
+    background-color: #222F3E;
+    margin: 19px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.card h4 {
+    color: #C8D6E5;  
+}
+
+.txt-anggota{
+    font-size: 14px;
+    font-style: italic;
+    width: 80%;
+    height: 200px;
+    color: #C8D6E5;
+    display: inline-block;
+}
+
+
+
+/* Rizky */
+#portfolio {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 36px;
+    color: #C8D6E5;
+    padding: 70px 0;
+}
+
+#portfolio .wrap {
+    display: inline-block;
+    margin-top: 15px;
+    background: #263238;
+    text-align: left;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
+    border-radius: 12px;
+}
+
+#portfolio .wrap2 {
+    display: inline-block;
+    margin: 15px 20px;
+    background: #eceff1;
+    text-align: left;
+    border-radius: 12px;
+}
+
+#portfolio .caption {
+    padding: 10px 30px;
+}
+
+#portfolio h3 {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 1.75em;
+}
+
+#portfolio p {
+    margin: 0;
+    font-size: 1.5em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 1.75em;
+}
+
+#portfolio .button {
+    display: inline-block;
+    margin: 15px 0 15px;
+    padding: 5px 15px;
+    line-height: 35px;
+    background: #2ebf91;
+    color: #eceff1;
+    border-radius: 25px;
+    box-shadow: 0 5px #228c6a;
+    transition: .15s all;
+}
+
+#portfolio .button:hover {
+    background: #b0bec5;
+    color: #263238;
+    box-shadow: 0 5px #90a4ae;
+    transition: .15s all;
+}
+
+#portfolio .button:active {
+    margin: 20px 0 10px;
+    box-shadow: none;
+}
+
+#portfolio .image,#portfolio .caption {
+    float: left;
+    width: 50%;
+}
+
+
+
+
+/* bagian footer*/
+
+footer {
+	background-color:#353a40; 
+    padding: 25px;
+}
+
+.footer-left {
+    float: left;
+    color: #C8D6E5;
+}
+
+.footer-left a{
+    font-size: 16px;
+    color: #C8D6E5;
+    padding: 0 10px;
+}
+
+.footer-right  {
+    float: right;
+    color: #C8D6E5;
+}
