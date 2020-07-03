@@ -194,8 +194,7 @@ a {
 
 .card {
     text-align: center;
-    display: inline-block;
-    margin: 80px auto;
+    margin: 0 auto 80px auto;
 }
 
 .anggota {
