@@ -201,6 +201,7 @@ a {
 .anggota {
     float: left;
     width: 300px;
+    height: 520px;
     background-color: #222F3E;
     padding: 20px 0;
     margin: 19px;
@@ -231,7 +232,6 @@ a {
     font-size: 14px;
     font-style: italic;
     width: 80%;
-    height: 270px;
     color: #C8D6E5;
     display: inline-block;
 }
