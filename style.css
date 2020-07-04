@@ -1,0 +1,674 @@
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+}
+  
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  .fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+  }
+
+/* Reset CSS (JANGAN DIHAPUS) */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* bagian header */
+header {
+    height: 65px;
+    line-height: 65px;
+    width: 100%;
+    background-color: #222f3e;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+	
+.header-left {
+    float: left;
+    color: white;
+    padding-left: 0;
+    opacity: 1;
+}
+
+.header-right {
+    float: right;
+    margin-right: -25px;
+    opacity: 1;
+}
+
+.header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: right;
+    transition: all 0.5s;
+}
+
+a {
+    cursor: pointer;
+    transition: 0.25s all;
+}
+
+.header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* bagian landing */
+
+#Perkenalan {
+    background-image: url("/assets/images/laptop.jpg");
+    background-size: cover;
+    text-align: left;
+    height: calc(100vh + 70px);
+    padding: 150px 0 200px 50px;
+    color: #C8D6E5;
+}
+
+#Perkenalan h1 {
+    font-size: 72px;
+    padding-bottom: 0px;
+}
+
+#Perkenalan h2 {
+    font-size: 36px;
+    padding-bottom: 10px;
+    opacity: 0.8;
+}
+
+#Perkenalan p {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.btn-wrapper {
+    margin: 40px 0;
+}
+
+.btn {
+    font-size: 18px;
+    color: #000000;
+    background-color: #1DD1A1;
+    opacity: 0.8;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px #228c6a;
+    transition: .15s all;
+}
+
+.btn:hover {
+    background: #b0bec5;
+    color: #263238;
+    box-shadow: 0 5px #90a4ae;
+    transition: .15s all;
+}
+
+.btn:active {
+    margin: 20px 0 10px;
+    box-shadow: none;
+}
+
+
+/* Bagian Materi*/
+
+#Materi {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.kotak {
+    background-color: #222F3E;
+    margin-top: -50px;
+    border-radius: 40px;
+}
+
+.heading-a {
+    color: #C8D6E5;
+    font-size: 36px;
+    font-weight: normal;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.lessons {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.lesson {
+    float: left;
+    width: 300px;
+    background-color: #C4C4C4;
+    margin: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.lesson-icon {
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.lesson p {
+    width: 80%;
+    height: 200px;
+    display: inline-block;
+}
+
+
+/* Bagian Tim*/
+
+#Tim {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.heading-b {
+    font-size: 48px;
+    color: #222F3E;
+    padding-bottom: 20px;
+}
+
+.card {
+    text-align: center;
+    margin: 0 auto 80px auto;
+}
+
+.card2 {
+    text-align: center;
+    margin-left: 20%;
+}
+
+.anggota {
+    float: left;
+    width: 30%;
+    height: 420px;
+    background-color: #222F3E;
+    padding: 20px 0;
+    margin: 19px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.card h4 {
+    color: #C8D6E5;  
+}
+
+.card2 h4 {
+    color: #C8D6E5;  
+}
+
+.avatar img {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    filter: grayscale(100%);
+    border-radius: 50%;
+    transition: .5s all;
+}
+
+.avatar img:hover {
+    filter: grayscale(0%);
+    transition: .5s all;
+}
+
+
+.txt-anggota{
+    font-size: 12px;
+    font-style: italic;
+    width: 80%;
+    color: #C8D6E5;
+    display: inline-block;
+}
+
+
+/* bagian portfolio */
+#portfolio {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 36px;
+    color: #C8D6E5;
+    padding: 30px 0;
+}
+
+#portfolio .wrap {
+    display: inline-block;
+    margin-top: 15px;
+    background: #263238;
+    text-align: left;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
+    border-radius: 12px;
+}
+
+#portfolio .wrap2 {
+    display: inline-block;
+    margin: 15px 20px;
+    background: #eceff1;
+    text-align: left;
+    border-radius: 12px;
+}
+
+#portfolio .caption {
+    padding: 10px 30px;
+}
+
+#portfolio h3 {
+    margin: 0;
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 1.75em;
+}
+
+#portfolio p {
+    margin: 0;
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 1.75em;
+}
+
+#portfolio .button {
+    display: inline-block;
+    margin: 15px 0 10px;
+    padding: 5px 15px;
+    line-height: 35px;
+    background: #2ebf91;
+    color: #eceff1;
+    border-radius: 25px;
+    box-shadow: 0 5px #228c6a;
+    transition: .15s all;
+}
+
+#portfolio .button:hover {
+    background: #b0bec5;
+    color: #263238;
+    box-shadow: 0 5px #90a4ae;
+    transition: .15s all;
+}
+
+#portfolio .button:active {
+    margin: 20px 0 10px;
+    box-shadow: none;
+}
+
+#portfolio .image {
+    line-height: 0;
+}
+
+#portfolio .image, #portfolio .caption {
+    float: left;
+    width: 50%;
+}
+
+.image img {
+    width: 100%;
+}
+
+
+/* bagian footer*/
+
+footer {
+	background-color:#353a40; 
+    padding: 25px;
+}
+
+.footer-left {
+    float: left;
+    color: #C8D6E5;
+}
+
+.footer-left a{
+    font-size: 16px;
+    color: #C8D6E5;
+    padding: 0 10px;
+}
+
+.footer-right  {
+    float: right;
+    color: #C8D6E5;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 800px) {
+    body {
+      font-size: 16px;
+    }
+
+    #Perkenalan {
+        background-image: url("/assets/images/laptop.jpg");
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+        text-align: left;
+        margin: 0px;
+        color: #C8D6E5;
+    }
+
+    #Perkenalan h1 {
+        font-size: xx-large;
+    }
+    
+    #Perkenalan h2 {
+        font-size: larger;
+        padding-bottom: 2px;
+    }
+    
+    #Perkenalan p {
+        font-size: small;
+        opacity: 0.6;
+    }
+    
+    .btn-wrapper {
+        margin: 10px 0;
+    }
+    
+    .btn {
+        font-size: small;
+    }
+
+    #Materi {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    
+    .kotak {
+        background-color: #222F3E;
+        margin-top:-350px;
+        border-radius: 40px;
+    }
+    
+    .heading-a {
+        color: #C8D6E5;
+        font-size: larger;
+        font-weight: normal;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .lessons {
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    
+    .lesson {
+        width: 95%;
+        background-color: #C4C4C4;
+        text-align: center;
+        border-radius: 20px;
+       
+    }
+    
+    .lesson-icon {
+        text-align: center;
+        padding: 20px 10px;
+    }
+    
+    .lesson p {
+        height: 100%;
+        display: inline-block;
+        padding-bottom: 20px;
+    }
+
+    #Tim {
+        margin-bottom: 70px;
+        text-align: center;
+    }
+    
+    .heading-b {
+        font-size: 48px;
+        color: #222F3E;
+        padding-bottom: 20px;
+    }
+    
+    .card {
+        text-align: center;
+        margin-left: 10%;
+    }
+
+    .card2 {
+        text-align: center;
+        margin-left: 10%;
+    }
+    
+    .anggota {
+        float: left;
+        width: 80%;
+        height: 100%;
+        background-color: #222F3E;
+        padding: 20px 0;
+        margin: 19px;
+        text-align: center;
+        border-radius: 20px;
+    }
+    
+    .card h4 {
+        color: #C8D6E5;
+        padding-bottom: 20px;  
+    }
+    
+    .avatar img {
+        width: 50%;
+        height: 50%;
+        margin: 20px;
+        filter: grayscale(100%);
+        border-radius: 50%;
+        transition: .5s all;
+    }
+    
+    .avatar img:hover {
+        filter: grayscale(0%);
+        transition: .5s all;
+    }
+    
+    
+    .txt-anggota{
+        font-size: 14px;
+        font-style: italic;
+        width: 80%;
+        color: #C8D6E5;
+        display: inline-block;
+    }
+    
+    .container {
+      width: 95%;
+    }
+
+    /* bagian portfolio */
+    #portfolio {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    #portfolio h2 {
+        font-size: xx-large;
+        color: #C8D6E5;
+        padding: 20px 0;
+    }
+
+    #portfolio .wrap {
+        display: inline-block;
+        margin-top: 15px;
+        background: #263238;
+        text-align: left;
+        box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
+        border-radius: 12px;
+    }
+
+    #portfolio .wrap2 {
+        display: inline-block;
+        margin: 15px 20px;
+        background: #eceff1;
+        text-align: left;
+        border-radius: 12px;
+    }
+
+    #portfolio .caption {
+        padding: 10px 30px;
+    }
+
+    #portfolio h3 {
+        margin: 0;
+        padding-top: 20px;
+        font-size: 18px;
+        line-height: 1.75em;
+    }
+
+    #portfolio p {
+        margin: 0;
+        font-size: 16px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        line-height: 1.75em;
+    }
+
+    #portfolio .button {
+        display: inline-block;
+        margin: 15px 0 10px;
+        padding: 5px 15px;
+        line-height: 35px;
+        background: #2ebf91;
+        color: #eceff1;
+        border-radius: 25px;
+        box-shadow: 0 5px #228c6a;
+        transition: .15s all;
+    }
+
+    #portfolio .button:hover {
+        background: #b0bec5;
+        color: #263238;
+        box-shadow: 0 5px #90a4ae;
+        transition: .15s all;
+    }
+
+    #portfolio .button:active {
+        margin: 20px 0 10px;
+        box-shadow: none;
+    }
+
+    #portfolio .image {
+        line-height: 0;
+    }
+
+    #portfolio .image,
+    #portfolio .caption {
+      width: 100%;
+    }
+
+    /* bagian footer*/
+
+    footer {
+        background-color:#353a40; 
+        padding: 25px;
+    }
+
+    .footer-left {
+        float: left;
+        color: #C8D6E5;
+    }
+
+    .footer-left a{
+        font-size: 16px;
+        color: #C8D6E5;
+        padding: 0 10px;
+    }
+
+    .footer-right  {
+        float: right;
+        color: #C8D6E5;
+    }
+  
+}
