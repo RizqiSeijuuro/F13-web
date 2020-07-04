@@ -427,7 +427,7 @@ footer {
     }
 
     #Perkenalan {
-        background-image: url("/assets/images/laptop.jpg");
+        background-image: url(assets/images/laptop.jpg);
         background-size: 100% 50%;
         background-repeat: no-repeat;
         text-align: left;
