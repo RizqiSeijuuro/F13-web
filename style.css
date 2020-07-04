@@ -143,7 +143,7 @@ a {
 /* bagian landing */
 
 #Perkenalan {
-    background-image: url("/assets/images/laptop.jpg");
+    background-image: url(assets/images/laptop.jpg);
     background-size: cover;
     text-align: left;
     height: calc(100vh + 70px);
